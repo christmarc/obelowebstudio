@@ -15,7 +15,7 @@ body {
 a { color: inherit; text-decoration: none; }
 .container { width: min(1100px, 92%); margin: 0 auto; }
 
-.muted { color: rgba(255,255,255,0.70); }
+.muted { color: #efefef91; }
 .sectionNote { color: rgba(255,255,255,0.70); margin-top: 18px; }
 
 .btn {
@@ -500,3 +500,4 @@ a { color: inherit; text-decoration: none; }
   .formRow { grid-template-columns: 1fr; }
   .contact__details { grid-template-columns: 1fr; }
 }
+
