@@ -1,29 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    ==========================================================
-    Obelo Web Studio - One Page Website (GitHub Pages Ready)
-    ==========================================================
-    - Static HTML + CSS (no backend)
-    - Contact section uses direct email + phone links
-  -->
+  <!-- ==========================================================
+    Obelo Web Studio — Static Website (GitHub Pages)
+    - No backend required
+    - Mobile menu uses pure HTML/CSS
+    - Contact is direct (email + phone), no form
+    - Google Analytics enabled (GA4)
+  =========================================================== -->
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Obelo Web Studio — AI Websites for Small Businesses & Startups</title>
 
-  <meta
-    name="description"
-    content="Obelo Web Studio builds AI-powered websites for small businesses and startups. Fast delivery, clean design, and performance you can feel."
-  />
+  <meta name="description" content="Obelo Web Studio builds fast, efficient websites using AI + expert design. Launch in days, not weeks. Perfect for small businesses and startups."/>
 
-  <title>Obelo Web Studio — AI-powered websites</title>
-
-  <meta property="og:title" content="Obelo Web Studio — AI-powered websites" />
-  <meta property="og:description" content="AI-powered websites for small businesses and startups. Fast delivery, clean design, and performance you can feel." />
-  <meta property="og:type" content="website" />
-
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css"/>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6BTTJFS7E"></script>
@@ -36,382 +28,488 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="logo" href="#top" aria-label="Obelo Web Studio home">
-        <span class="logo-mark">O</span>
-        <span class="logo-text">Obelo Web Studio</span>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement">
+    <div class="container announcement__inner">
+      <p>⚡ Launch a high-performing website in <strong>3–7 days</strong> with AI + human polish.</p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header__inner">
+
+      <!-- BRAND: Logo Image + Name -->
+      <a class="brand" href="#top" aria-label="Obelo Web Studio">
+        <span class="brand__logoWrap" aria-hidden="true">
+          <!-- Tip: If you don't have the logo yet, replace src with a placeholder or remove the img -->
+          <img class="brand__logo" src="obelo-logo.png" alt="Obelo Web Studio Logo">
+        </span>
+        <span class="brand__text"><strong>Obelo</strong> Web Studio</span>
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
+      <!-- Desktop Nav -->
+      <nav class="nav" aria-label="Primary">
         <a href="#services">Services</a>
-        <a href="#benefits">Benefits</a>
         <a href="#process">Process</a>
         <a href="#work">Work</a>
+        <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn-small">Contact</a>
+        <a class="btn btn--small" href="#contact">Contact</a>
       </nav>
+
+      <!-- Mobile Nav Toggle (CSS only) -->
+      <input type="checkbox" id="navToggle" class="navToggle" aria-label="Toggle menu">
+      <label for="navToggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <div class="mobileNav" aria-label="Mobile navigation">
+        <a href="#services" onclick="document.getElementById('navToggle').checked=false">Services</a>
+        <a href="#process" onclick="document.getElementById('navToggle').checked=false">Process</a>
+        <a href="#work" onclick="document.getElementById('navToggle').checked=false">Work</a>
+        <a href="#pricing" onclick="document.getElementById('navToggle').checked=false">Pricing</a>
+        <a href="#faq" onclick="document.getElementById('navToggle').checked=false">FAQ</a>
+        <a class="btn" href="#contact" onclick="document.getElementById('navToggle').checked=false">Contact</a>
+      </div>
     </div>
   </header>
 
-  <main id="top">
-    <!-- JUMBOTRON (BIG HERO) -->
-    <section class="jumbotron">
-      <div class="container jumbo-grid">
-        <div class="jumbo-copy">
-          <p class="badge">AI-powered websites</p>
-          <h1>Fast delivery. Clean design. Performance you can feel.</h1>
+  <!-- Hero / Jumbotron -->
+  <section class="hero" id="top">
+    <div class="container hero__grid">
 
-          <p class="lead">
-            Obelo Web Studio builds modern websites for small businesses and startups—designed to look premium,
-            load fast, and communicate your value clearly.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn" href="#contact">Contact our team</a>
-            <a class="btn btn-ghost" href="#services">See what we offer</a>
-          </div>
-
-          <!-- 4-column highlight row -->
-          <div class="highlights-4">
-            <div class="highlight">
-              <span class="h-title">Launch fast</span>
-              <span class="h-sub">Move from idea → live</span>
-            </div>
-            <div class="highlight">
-              <span class="h-title">Mobile-first</span>
-              <span class="h-sub">Built for every screen</span>
-            </div>
-            <div class="highlight">
-              <span class="h-title">SEO-ready</span>
-              <span class="h-sub">Google-friendly structure</span>
-            </div>
-            <div class="highlight">
-              <span class="h-title">Lightweight</span>
-              <span class="h-sub">Fast loading pages</span>
-            </div>
-          </div>
+      <!-- Left content -->
+      <div class="hero__content">
+        <div class="pill">
+          <span>AI-Powered</span>
+          <span class="dot"></span>
+          <span>Fast Launch</span>
+          <span class="dot"></span>
+          <span>Small Biz Friendly</span>
         </div>
 
-        <!-- Right side “feature card” -->
-        <div class="jumbo-panel" role="presentation">
-          <div class="card card-strong">
-            <p class="card-eyebrow">What you get</p>
-            <h2 class="card-title">A website built to convert.</h2>
-            <p class="card-text">
-              Clear messaging, strong calls-to-action, and a smooth experience—so visitors trust you and take action.
-            </p>
+        <h1>
+          Obelo Web Studio builds <span class="grad">fast & efficient</span> websites
+          for small businesses and startups.
+        </h1>
 
-            <ul class="checklist">
-              <li>Modern one-page or multi-page site</li>
-              <li>Clean design & layout hierarchy</li>
-              <li>Speed-first styling (no bloat)</li>
-              <li>SEO foundations (titles, structure)</li>
-              <li>Direct contact system (no forms)</li>
-            </ul>
+        <p class="lead">
+          We use AI to accelerate strategy, copy, design, and development—then refine everything
+          into a clean, conversion-focused website that loads quickly and looks premium on every device.
+        </p>
 
-            <a class="btn btn-full" href="#services">Explore services</a>
+        <div class="hero__actions">
+          <a class="btn" href="#contact">Start Your Project</a>
+          <a class="btn btn--ghost" href="#work">View Work</a>
+        </div>
+
+        <div class="trust">
+          <div class="trust__item">
+            <strong>3–7 days</strong>
+            <span>Typical launch</span>
+          </div>
+          <div class="trust__item">
+            <strong>90+</strong>
+            <span>PageSpeed targets</span>
+          </div>
+          <div class="trust__item">
+            <strong>SEO-ready</strong>
+            <span>Structure + basics</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- TRUST BAR -->
-    <section class="section section-slim">
-      <div class="container trustbar">
-        <div class="trustbar-item">
-          <span class="trustbar-title">Designed for</span>
-          <span class="trustbar-sub">Small Business • Startups • Creators</span>
-        </div>
-        <div class="trustbar-item">
-          <span class="trustbar-title">Focus</span>
-          <span class="trustbar-sub">Clarity • Speed • Conversions</span>
-        </div>
-        <div class="trustbar-item">
-          <span class="trustbar-title">Delivery</span>
-          <span class="trustbar-sub">Fast, structured, and reliable</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Services</h2>
-          <p>Simple packages that match what growing businesses actually need.</p>
-        </div>
-
-        <div class="grid-3">
-          <article class="tile">
-            <h3>Starter Website</h3>
-            <p>Perfect for new businesses that need credibility fast.</p>
-            <ul>
-              <li>One-page or 3–5 pages</li>
-              <li>Clean modern layout</li>
-              <li>Direct contact setup</li>
-            </ul>
-          </article>
-
-          <article class="tile">
-            <h3>Growth Website</h3>
-            <p>Built to drive action with clear structure and content flow.</p>
-            <ul>
-              <li>Services, About, Contact</li>
-              <li>Sections that build trust</li>
-              <li>SEO-ready structure</li>
-            </ul>
-          </article>
-
-          <article class="tile">
-            <h3>Redesign & Performance</h3>
-            <p>Upgrade your website: faster, cleaner, more modern.</p>
-            <ul>
-              <li>Design refresh</li>
-              <li>Speed improvements</li>
-              <li>Content cleanup</li>
-            </ul>
-          </article>
-        </div>
-
-        <!-- 2-column “service details” -->
-        <div class="grid-2 mt-24">
-          <div class="panel">
-            <h3>What we build</h3>
-            <p class="muted">
-              Landing pages, business websites, portfolio sites, and startup launch pages. Always clean, mobile-first, and fast.
-            </p>
-            <div class="chips">
-              <span class="chip">One-page sites</span>
-              <span class="chip">Multi-page sites</span>
-              <span class="chip">Portfolio</span>
-              <span class="chip">Startup launch</span>
-              <span class="chip">Business refresh</span>
-            </div>
-          </div>
-
-          <div class="panel">
-            <h3>What we prioritize</h3>
-            <p class="muted">
-              Clear messaging, trust, and performance—so your site feels premium and helps people take action.
-            </p>
-            <div class="grid-2 mini-grid">
-              <div class="mini">
-                <p class="mini-title">Clarity</p>
-                <p class="mini-sub">Say the right thing fast</p>
-              </div>
-              <div class="mini">
-                <p class="mini-title">Trust</p>
-                <p class="mini-sub">Look credible instantly</p>
-              </div>
-              <div class="mini">
-                <p class="mini-title">Speed</p>
-                <p class="mini-sub">Performance-first build</p>
-              </div>
-              <div class="mini">
-                <p class="mini-title">Structure</p>
-                <p class="mini-sub">Better user flow</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- BENEFITS (4 columns) -->
-    <section id="benefits" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Benefits</h2>
-          <p>Why clients choose Obelo Web Studio.</p>
-        </div>
-
-        <div class="grid-4">
-          <div class="benefit">
-            <h3>Premium look</h3>
-            <p>Clean typography and layout hierarchy that instantly upgrades your brand.</p>
-          </div>
-          <div class="benefit">
-            <h3>Fast load speed</h3>
-            <p>Lightweight HTML/CSS for a smooth experience users can feel.</p>
-          </div>
-          <div class="benefit">
-            <h3>Clear messaging</h3>
-            <p>We organize your content so visitors understand what you do in seconds.</p>
-          </div>
-          <div class="benefit">
-            <h3>Easy to maintain</h3>
-            <p>Simple files you can edit anytime—no complicated systems.</p>
-          </div>
-        </div>
-
-        <!-- Stats row -->
-        <div class="stats mt-24">
-          <div class="stat">
-            <p class="stat-num">⚡</p>
-            <p class="stat-title">Performance-first</p>
-            <p class="stat-sub">No heavy frameworks</p>
-          </div>
-          <div class="stat">
-            <p class="stat-num">📱</p>
-            <p class="stat-title">Mobile-ready</p>
-            <p class="stat-sub">Responsive grids</p>
-          </div>
-          <div class="stat">
-            <p class="stat-num">🔎</p>
-            <p class="stat-title">SEO structure</p>
-            <p class="stat-sub">Built for Google</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="process" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Process</h2>
-          <p>Simple steps. Fast execution.</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="step">
-            <p class="step-num">01</p>
-            <h3>Discovery</h3>
-            <p>We align on goals, audience, and what the website needs to achieve.</p>
-          </div>
-          <div class="step">
-            <p class="step-num">02</p>
-            <h3>Build</h3>
-            <p>We design and structure the site so it looks great and reads clearly.</p>
-          </div>
-          <div class="step">
-            <p class="step-num">03</p>
-            <h3>Launch</h3>
-            <p>We test and publish on GitHub Pages—fast, reliable, and simple.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section id="work" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Recent work</h2>
-          <p>Replace these with real projects as you complete them.</p>
-        </div>
-
-        <div class="grid-3">
-          <a class="project" href="#" aria-label="Project 1">
-            <div class="project-thumb">Project</div>
-            <div class="project-meta">
-              <h3>Client Website</h3>
-              <p>Clean business presence</p>
-            </div>
-          </a>
-
-          <a class="project" href="#" aria-label="Project 2">
-            <div class="project-thumb">Project</div>
-            <div class="project-meta">
-              <h3>Startup Launch</h3>
-              <p>Landing page + copy structure</p>
-            </div>
-          </a>
-
-          <a class="project" href="#" aria-label="Project 3">
-            <div class="project-thumb">Project</div>
-            <div class="project-meta">
-              <h3>Website Refresh</h3>
-              <p>Redesign + speed upgrades</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ (2 columns) -->
-    <section id="faq" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>FAQ</h2>
-          <p>Quick answers to common questions.</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="faq">
-            <h3>How fast can you deliver?</h3>
-            <p class="muted">It depends on content, but most simple sites can be launched quickly once we have the details.</p>
-          </div>
-
-          <div class="faq">
-            <h3>Do you only build one-page sites?</h3>
-            <p class="muted">No—this setup supports one-page or multi-page websites. We choose what fits your goals.</p>
-          </div>
-
-          <div class="faq">
-            <h3>Can I update the site myself?</h3>
-            <p class="muted">Yes. Since it’s simple HTML and CSS, you can edit text and sections anytime.</p>
-          </div>
-
-          <div class="faq">
-            <h3>How do clients contact us without a form?</h3>
-            <p class="muted">We provide direct phone and email contacts so prospects can reach you immediately.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT (NO FORM) -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact Obelo Web Studio</h2>
-          <p>Reach out directly to our team. We respond quickly and keep things simple.</p>
-        </div>
-
-        <div class="contact-grid-simple">
-          <div class="contact-card">
-            <p class="small-label">Project Manager</p>
-            <h3>Christ M. Louissaint</h3>
-            <p class="contact-value">
-              <a href="mailto:christmlouissaint@gmail.com">christmlouissaint@gmail.com</a>
-            </p>
-            <p class="contact-value">
-              <a href="tel:+18458212350">845-821-2350</a>
+      <!-- Right card -->
+      <div class="hero__card">
+        <div class="card">
+          <div class="card__top">
+            <div class="card__badge">What you get</div>
+            <div class="card__title">A modern website built for growth</div>
+            <p class="card__desc">
+              A focused homepage + key pages, clean UI, mobile-first layout, optimized performance,
+              and a simple content system so you can update your business anytime.
             </p>
           </div>
 
-          <div class="contact-card">
-            <p class="small-label">Customer Service</p>
-            <h3>Sandy Marc</h3>
-            <p class="contact-value">
-              <a href="mailto:sandyma23@gmail.com">sandyma23@gmail.com</a>
-            </p>
-            <p class="contact-value">
-              <a href="tel:+18456598842">845-659-8842</a>
-            </p>
+          <ul class="checklist">
+            <li>Conversion-focused layout</li>
+            <li>AI-assisted copywriting + polish</li>
+            <li>Fast load speed + image optimization</li>
+            <li>Responsive design for all screens</li>
+            <li>Direct contact (email + phone)</li>
+            <li>Analytics enabled (GA4)</li>
+          </ul>
+
+          <div class="card__bottom">
+            <a class="btn btn--wide" href="#pricing">Compare Packages</a>
+            <p class="fineprint">No long contracts. Clear scope. Quick delivery.</p>
           </div>
         </div>
 
-        <p class="fineprint">
-          Remote-first. Serving small businesses and startups worldwide.
+        <div class="glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos / Social Proof -->
+  <section class="logos">
+    <div class="container">
+      <p class="sectionNote">Built for businesses that need speed, clarity, and results.</p>
+      <div class="logos__row" aria-label="Client types">
+        <span>Local Services</span>
+        <span>SaaS Startups</span>
+        <span>Consultants</span>
+        <span>Creators</span>
+        <span>E-commerce</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Services designed for fast growth</h2>
+        <p>
+          Obelo combines AI speed with human design judgment. You get a site that looks great,
+          loads fast, and supports marketing from day one.
         </p>
       </div>
-    </section>
-  </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <p>© <span id="year"></span> Obelo Web Studio. All rights reserved.</p>
-      <p class="footer-links">
+      <div class="grid3">
+        <article class="feature">
+          <h3>AI Website Design</h3>
+          <p>We generate design directions quickly, then refine layouts into a premium experience.</p>
+          <ul class="miniList">
+            <li>Brand-aligned UI</li>
+            <li>Modern layouts</li>
+            <li>Mobile-first design</li>
+          </ul>
+        </article>
+
+        <article class="feature">
+          <h3>Copy & Messaging</h3>
+          <p>AI drafts copy fast. We polish it so it’s clear, confident, and conversion-focused.</p>
+          <ul class="miniList">
+            <li>Headlines & CTAs</li>
+            <li>Service descriptions</li>
+            <li>SEO-friendly structure</li>
+          </ul>
+        </article>
+
+        <article class="feature">
+          <h3>Performance & SEO Basics</h3>
+          <p>Clean code and optimized assets so your site loads fast and ranks better.</p>
+          <ul class="miniList">
+            <li>Fast loading pages</li>
+            <li>Clean HTML structure</li>
+            <li>Metadata & accessibility</li>
+          </ul>
+        </article>
+
+        <article class="feature">
+          <h3>Landing Pages</h3>
+          <p>High-converting pages for ads, promotions, and startup launches.</p>
+          <ul class="miniList">
+            <li>Offer + benefits layout</li>
+            <li>Strong CTA placement</li>
+            <li>Conversion structure</li>
+          </ul>
+        </article>
+
+        <article class="feature">
+          <h3>Business Websites</h3>
+          <p>Full small-business sites: services, about, contact, and optional portfolio.</p>
+          <ul class="miniList">
+            <li>Service pages</li>
+            <li>Portfolio sections</li>
+            <li>Trust-building sections</li>
+          </ul>
+        </article>
+
+        <article class="feature">
+          <h3>Maintenance & Updates</h3>
+          <p>We can keep your site updated with new pages, edits, and improvements.</p>
+          <ul class="miniList">
+            <li>Monthly support</li>
+            <li>Content updates</li>
+            <li>Performance checks</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section section--alt" id="process">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>How we build your site in days</h2>
+        <p>AI accelerates the early work; human expertise refines the final experience.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <h3>Kickoff & Goals</h3>
+          <p>We define your audience, offer, and the #1 action you want visitors to take.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__num">2</div>
+          <h3>AI Draft + Direction</h3>
+          <p>AI generates structure and copy options quickly. We pick the best direction.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__num">3</div>
+          <h3>Design Polish</h3>
+          <p>We refine typography, spacing, visuals, and consistency across your pages.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__num">4</div>
+          <h3>Build & Optimize</h3>
+          <p>We optimize images, ensure responsiveness, and keep performance high.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__num">5</div>
+          <h3>Launch & Support</h3>
+          <p>We help you go live and provide guidance for future improvements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Sample work layouts</h2>
+        <p>Replace these cards with real client projects and screenshots.</p>
+      </div>
+
+      <div class="grid3">
+        <article class="workCard">
+          <div class="workCard__thumb"><div class="workCard__label">Local Service</div></div>
+          <h3>BrightFix Plumbing</h3>
+          <p>Local business site with service pages + clear CTA flow.</p>
+          <ul class="tagRow"><li>Speed</li><li>SEO</li><li>Leads</li></ul>
+        </article>
+
+        <article class="workCard">
+          <div class="workCard__thumb"><div class="workCard__label">Startup</div></div>
+          <h3>PulseMetric</h3>
+          <p>Landing page with clear pitch, benefits, and strong CTA.</p>
+          <ul class="tagRow"><li>Landing</li><li>Copy</li><li>Conversion</li></ul>
+        </article>
+
+        <article class="workCard">
+          <div class="workCard__thumb"><div class="workCard__label">Creative</div></div>
+          <h3>Studio Luma</h3>
+          <p>Portfolio-focused site with clean gallery and branding.</p>
+          <ul class="tagRow"><li>Portfolio</li><li>Brand</li><li>UI</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section section--alt" id="pricing">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Simple pricing for small teams</h2>
+        <p>Choose a package based on your timeline and number of pages.</p>
+      </div>
+
+      <div class="pricing">
+        <article class="priceCard">
+          <h3>Starter</h3>
+          <p class="price">$299 <span>/ one-time</span></p>
+          <p class="muted">Perfect for a quick online presence.</p>
+          <ul class="checklist checklist--compact">
+            <li>1-page landing site</li>
+            <li>AI-assisted copy draft</li>
+            <li>Direct contact section</li>
+            <li>Basic SEO structure</li>
+            <li>Mobile responsive</li>
+          </ul>
+          <a class="btn btn--ghost btn--wide" href="#contact">Choose Starter</a>
+        </article>
+
+        <article class="priceCard priceCard--featured">
+          <div class="ribbon">Most Popular</div>
+          <h3>Business</h3>
+          <p class="price">$699 <span>/ one-time</span></p>
+          <p class="muted">Best for small businesses & teams.</p>
+          <ul class="checklist checklist--compact">
+            <li>Up to 5 pages</li>
+            <li>AI + human copy polish</li>
+            <li>Services + About + Contact</li>
+            <li>Performance optimization</li>
+            <li>Analytics enabled (GA4)</li>
+          </ul>
+          <a class="btn btn--wide" href="#contact">Choose Business</a>
+        </article>
+
+        <article class="priceCard">
+          <h3>Studio+</h3>
+          <p class="price">$1299 <span>/ one-time</span></p>
+          <p class="muted">For startups that need more strategy & pages.</p>
+          <ul class="checklist checklist--compact">
+            <li>Up to 10 pages</li>
+            <li>Advanced sections + UI components</li>
+            <li>FAQ + testimonials setup</li>
+            <li>On-page SEO basics</li>
+            <li>2 rounds of revisions</li>
+          </ul>
+          <a class="btn btn--ghost btn--wide" href="#contact">Choose Studio+</a>
+        </article>
+      </div>
+
+      <p class="sectionNote">Need e-commerce, booking, or custom features? We can quote based on scope.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Frequently asked questions</h2>
+        <p>Clear answers help clients feel confident before contacting you.</p>
+      </div>
+
+      <div class="faq">
+        <details class="faqItem">
+          <summary>How fast can you build my website?</summary>
+          <p>Most projects launch in <strong>3–7 days</strong> depending on scope and content readiness.</p>
+        </details>
+        <details class="faqItem">
+          <summary>Do you use AI to build the whole website?</summary>
+          <p>AI speeds up drafts; humans refine design, structure, and polish for a premium result.</p>
+        </details>
+        <details class="faqItem">
+          <summary>Do you include hosting and a domain?</summary>
+          <p>Hosting/domains are separate (you own them). We can guide you to budget-friendly providers.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact (NO FORM, direct contacts) -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact">
+        <div class="contact__info">
+          <h2>Contact Obelo Web Studio</h2>
+          <p class="lead">Reach out directly to our team. We respond quickly and keep things simple.</p>
+
+          <div class="infoCard">
+            <h3>What to include</h3>
+            <ul class="checklist checklist--compact">
+              <li>Your business name + industry</li>
+              <li>Services or product</li>
+              <li>How many pages you want</li>
+              <li>Examples of websites you like</li>
+              <li>Your timeline</li>
+            </ul>
+          </div>
+
+          <div class="contact__details">
+            <div>
+              <span class="muted">Response time</span>
+              <p><strong>Within 24–48 hours</strong></p>
+            </div>
+            <div>
+              <span class="muted">Service</span>
+              <p><strong>Remote / Worldwide</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactCards">
+          <!-- Project Manager -->
+          <div class="contactCard">
+            <p class="contactCard__role">Project Manager</p>
+            <h3 class="contactCard__name">Christ M Louissaint</h3>
+
+            <p class="contactCard__line">
+              <span class="muted">Email</span><br>
+              <a class="contactLink" href="mailto:christmlouissaint@gmail.com">christmlouissaint@gmail.com</a>
+            </p>
+
+            <p class="contactCard__line">
+              <span class="muted">Phone</span><br>
+              <a class="contactLink" href="tel:+18458212350">845-821-2350</a>
+            </p>
+          </div>
+
+          <!-- Customer Service -->
+          <div class="contactCard">
+            <p class="contactCard__role">Customer Service</p>
+            <h3 class="contactCard__name">Sandy Marc</h3>
+
+            <p class="contactCard__line">
+              <span class="muted">Email</span><br>
+              <a class="contactLink" href="mailto:sandyma23@gmail.com">sandyma23@gmail.com</a>
+            </p>
+
+            <p class="contactCard__line">
+              <span class="muted">Phone</span><br>
+              <a class="contactLink" href="tel:+18456598842">845-659-8842</a>
+            </p>
+          </div>
+
+          <!-- Optional quick note card -->
+          <div class="contactCard contactCard--note">
+            <p class="contactCard__role">Quick note</p>
+            <h3 class="contactCard__name">Send a short message</h3>
+            <p class="muted">
+              Email works best. Include your business name, what you need, and your timeline.
+              We’ll reply with a clear plan and quote.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--footer">
+          <span class="brand__logoWrap brand__logoWrap--footer" aria-hidden="true">
+            <img class="brand__logo" src="obelo-logo.png" alt="Obelo Web Studio Logo">
+          </span>
+          <span class="brand__text"><strong>Obelo</strong> Web Studio</span>
+        </div>
+        <p class="muted">
+          AI-powered websites for small businesses and startups. Fast delivery, clean design,
+          and performance you can feel.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <strong>Company</strong>
         <a href="#services">Services</a>
-        <a href="#benefits">Benefits</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
-      </p>
+      </div>
+
+      <div class="footer__links">
+        <strong>Legal</strong>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Obelo Web Studio. All rights reserved.</span>
+      </div>
     </div>
   </footer>
 
