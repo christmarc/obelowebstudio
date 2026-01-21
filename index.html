@@ -3,18 +3,15 @@
 <head>
   <!--
     ==========================================================
-    Obelo Web Studio
-    AI-powered websites for small businesses and startups
+    Obelo Web Studio - One Page Website (GitHub Pages Ready)
     ==========================================================
-    Hosting: GitHub Pages
-    Analytics: Google Analytics (gtag.js)
+    - Static HTML + CSS (no backend)
+    - Contact section uses direct email + phone links
   -->
 
-  <!-- Basic Meta -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO -->
   <meta
     name="description"
     content="Obelo Web Studio builds AI-powered websites for small businesses and startups. Fast delivery, clean design, and performance you can feel."
@@ -22,21 +19,13 @@
 
   <title>Obelo Web Studio — AI-powered websites</title>
 
-  <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Obelo Web Studio — AI-powered websites" />
-  <meta
-    property="og:description"
-    content="AI-powered websites for small businesses and startups. Fast delivery, clean design, and performance you can feel."
-  />
+  <meta property="og:description" content="AI-powered websites for small businesses and startups. Fast delivery, clean design, and performance you can feel." />
   <meta property="og:type" content="website" />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- ==========================================================
-       Google Analytics (gtag.js)
-       Measurement ID: G-B6BTTJFS7E
-       ========================================================== -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6BTTJFS7E"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -45,183 +34,274 @@
     gtag('config', 'G-B6BTTJFS7E');
   </script>
 </head>
+
 <body>
-  <!-- ==========================================================
-       HEADER / NAVIGATION
-       - Sticky header stays at top while scrolling
-       - Navigation links jump to sections (anchor links)
-       ========================================================== -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-row">
-      <!-- Logo / Brand -->
       <a class="logo" href="#top" aria-label="Obelo Web Studio home">
         <span class="logo-mark">O</span>
         <span class="logo-text">Obelo Web Studio</span>
       </a>
 
-      <!-- Navigation -->
       <nav class="nav" aria-label="Primary navigation">
         <a href="#services">Services</a>
+        <a href="#benefits">Benefits</a>
         <a href="#process">Process</a>
         <a href="#work">Work</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact" class="btn btn-small">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <!-- ==========================================================
-         HERO SECTION
-         - Strong headline + your tagline
-         - Primary CTA (contact)
-         ========================================================== -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
+    <!-- JUMBOTRON (BIG HERO) -->
+    <section class="jumbotron">
+      <div class="container jumbo-grid">
+        <div class="jumbo-copy">
           <p class="badge">AI-powered websites</p>
-
-          <h1>AI-powered websites for small businesses & startups.</h1>
+          <h1>Fast delivery. Clean design. Performance you can feel.</h1>
 
           <p class="lead">
-            Fast delivery, clean design, and performance you can feel.
-            We help you launch a modern website that looks professional and supports your growth.
+            Obelo Web Studio builds modern websites for small businesses and startups—designed to look premium,
+            load fast, and communicate your value clearly.
           </p>
 
           <div class="hero-actions">
-            <a class="btn" href="#contact">Contact us</a>
-            <a class="btn btn-ghost" href="#services">Explore services</a>
+            <a class="btn" href="#contact">Contact our team</a>
+            <a class="btn btn-ghost" href="#services">See what we offer</a>
           </div>
 
-          <!-- Trust / Highlights -->
-          <div class="trust">
-            <div class="trust-item">
-              <span class="trust-title">Fast delivery</span>
-              <span class="trust-sub">Launch-ready in days</span>
+          <!-- 4-column highlight row -->
+          <div class="highlights-4">
+            <div class="highlight">
+              <span class="h-title">Launch fast</span>
+              <span class="h-sub">Move from idea → live</span>
             </div>
-            <div class="trust-item">
-              <span class="trust-title">Clean design</span>
-              <span class="trust-sub">Modern, professional layout</span>
+            <div class="highlight">
+              <span class="h-title">Mobile-first</span>
+              <span class="h-sub">Built for every screen</span>
             </div>
-            <div class="trust-item">
-              <span class="trust-title">Performance</span>
-              <span class="trust-sub">Optimized for speed</span>
+            <div class="highlight">
+              <span class="h-title">SEO-ready</span>
+              <span class="h-sub">Google-friendly structure</span>
+            </div>
+            <div class="highlight">
+              <span class="h-title">Lightweight</span>
+              <span class="h-sub">Fast loading pages</span>
             </div>
           </div>
         </div>
 
-        <!-- Right-side card -->
-        <div class="hero-card" role="presentation">
-          <div class="card">
-            <div class="card-top">
-              <p class="card-eyebrow">What we deliver</p>
-              <h2 class="card-title">A website that works.</h2>
-              <p class="card-text">
-                Clear messaging, smart structure, and smooth mobile experience—so visitors trust you and take action.
-              </p>
-            </div>
+        <!-- Right side “feature card” -->
+        <div class="jumbo-panel" role="presentation">
+          <div class="card card-strong">
+            <p class="card-eyebrow">What you get</p>
+            <h2 class="card-title">A website built to convert.</h2>
+            <p class="card-text">
+              Clear messaging, strong calls-to-action, and a smooth experience—so visitors trust you and take action.
+            </p>
 
             <ul class="checklist">
-              <li>Landing pages and business websites</li>
-              <li>Mobile-first, responsive design</li>
-              <li>SEO-ready structure</li>
-              <li>Fast loading performance</li>
-              <li>Professional brand presence</li>
+              <li>Modern one-page or multi-page site</li>
+              <li>Clean design & layout hierarchy</li>
+              <li>Speed-first styling (no bloat)</li>
+              <li>SEO foundations (titles, structure)</li>
+              <li>Direct contact system (no forms)</li>
             </ul>
 
-            <a class="btn btn-full" href="#contact">Talk to our team</a>
+            <a class="btn btn-full" href="#services">Explore services</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================
-         SERVICES
-         - Simple packages / categories
-         ========================================================== -->
+    <!-- TRUST BAR -->
+    <section class="section section-slim">
+      <div class="container trustbar">
+        <div class="trustbar-item">
+          <span class="trustbar-title">Designed for</span>
+          <span class="trustbar-sub">Small Business • Startups • Creators</span>
+        </div>
+        <div class="trustbar-item">
+          <span class="trustbar-title">Focus</span>
+          <span class="trustbar-sub">Clarity • Speed • Conversions</span>
+        </div>
+        <div class="trustbar-item">
+          <span class="trustbar-title">Delivery</span>
+          <span class="trustbar-sub">Fast, structured, and reliable</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
     <section id="services" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Services</h2>
-          <p>Focused solutions for businesses that want a site that looks great and loads fast.</p>
+          <p>Simple packages that match what growing businesses actually need.</p>
         </div>
 
         <div class="grid-3">
           <article class="tile">
             <h3>Starter Website</h3>
-            <p>Perfect for new businesses that need a strong, credible online presence.</p>
+            <p>Perfect for new businesses that need credibility fast.</p>
             <ul>
-              <li>One-page or multi-page site</li>
-              <li>Modern layout</li>
-              <li>Contact information setup</li>
+              <li>One-page or 3–5 pages</li>
+              <li>Clean modern layout</li>
+              <li>Direct contact setup</li>
             </ul>
           </article>
 
           <article class="tile">
             <h3>Growth Website</h3>
-            <p>For businesses that want structure and sections built to drive leads.</p>
+            <p>Built to drive action with clear structure and content flow.</p>
             <ul>
-              <li>Services + About + Contact</li>
-              <li>Testimonials & credibility sections</li>
-              <li>SEO foundations</li>
+              <li>Services, About, Contact</li>
+              <li>Sections that build trust</li>
+              <li>SEO-ready structure</li>
             </ul>
           </article>
 
           <article class="tile">
             <h3>Redesign & Performance</h3>
-            <p>Upgrade your existing website with better speed, layout, and clarity.</p>
+            <p>Upgrade your website: faster, cleaner, more modern.</p>
             <ul>
-              <li>Modern redesign</li>
-              <li>Performance optimization</li>
-              <li>Content improvements</li>
+              <li>Design refresh</li>
+              <li>Speed improvements</li>
+              <li>Content cleanup</li>
             </ul>
           </article>
+        </div>
+
+        <!-- 2-column “service details” -->
+        <div class="grid-2 mt-24">
+          <div class="panel">
+            <h3>What we build</h3>
+            <p class="muted">
+              Landing pages, business websites, portfolio sites, and startup launch pages. Always clean, mobile-first, and fast.
+            </p>
+            <div class="chips">
+              <span class="chip">One-page sites</span>
+              <span class="chip">Multi-page sites</span>
+              <span class="chip">Portfolio</span>
+              <span class="chip">Startup launch</span>
+              <span class="chip">Business refresh</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>What we prioritize</h3>
+            <p class="muted">
+              Clear messaging, trust, and performance—so your site feels premium and helps people take action.
+            </p>
+            <div class="grid-2 mini-grid">
+              <div class="mini">
+                <p class="mini-title">Clarity</p>
+                <p class="mini-sub">Say the right thing fast</p>
+              </div>
+              <div class="mini">
+                <p class="mini-title">Trust</p>
+                <p class="mini-sub">Look credible instantly</p>
+              </div>
+              <div class="mini">
+                <p class="mini-title">Speed</p>
+                <p class="mini-sub">Performance-first build</p>
+              </div>
+              <div class="mini">
+                <p class="mini-title">Structure</p>
+                <p class="mini-sub">Better user flow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BENEFITS (4 columns) -->
+    <section id="benefits" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Benefits</h2>
+          <p>Why clients choose Obelo Web Studio.</p>
+        </div>
+
+        <div class="grid-4">
+          <div class="benefit">
+            <h3>Premium look</h3>
+            <p>Clean typography and layout hierarchy that instantly upgrades your brand.</p>
+          </div>
+          <div class="benefit">
+            <h3>Fast load speed</h3>
+            <p>Lightweight HTML/CSS for a smooth experience users can feel.</p>
+          </div>
+          <div class="benefit">
+            <h3>Clear messaging</h3>
+            <p>We organize your content so visitors understand what you do in seconds.</p>
+          </div>
+          <div class="benefit">
+            <h3>Easy to maintain</h3>
+            <p>Simple files you can edit anytime—no complicated systems.</p>
+          </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="stats mt-24">
+          <div class="stat">
+            <p class="stat-num">⚡</p>
+            <p class="stat-title">Performance-first</p>
+            <p class="stat-sub">No heavy frameworks</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">📱</p>
+            <p class="stat-title">Mobile-ready</p>
+            <p class="stat-sub">Responsive grids</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">🔎</p>
+            <p class="stat-title">SEO structure</p>
+            <p class="stat-sub">Built for Google</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================
-         PROCESS
-         - Your simple 3-step system
-         ========================================================== -->
-    <section id="process" class="section section-alt">
+    <!-- PROCESS -->
+    <section id="process" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Process</h2>
-          <p>Clear steps. Fast delivery. No confusion.</p>
+          <p>Simple steps. Fast execution.</p>
         </div>
 
         <div class="grid-3">
           <div class="step">
             <p class="step-num">01</p>
             <h3>Discovery</h3>
-            <p>We align on your goals, audience, and the message your website should communicate.</p>
+            <p>We align on goals, audience, and what the website needs to achieve.</p>
           </div>
-
           <div class="step">
             <p class="step-num">02</p>
-            <h3>Design & Build</h3>
-            <p>We build a clean, modern site with strong layout and a smooth mobile experience.</p>
+            <h3>Build</h3>
+            <p>We design and structure the site so it looks great and reads clearly.</p>
           </div>
-
           <div class="step">
             <p class="step-num">03</p>
             <h3>Launch</h3>
-            <p>We finalize details, test performance, and publish your site on GitHub Pages.</p>
+            <p>We test and publish on GitHub Pages—fast, reliable, and simple.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================
-         WORK / PORTFOLIO
-         - Replace # with real links later
-         - Or remove this section until you have projects
-         ========================================================== -->
-    <section id="work" class="section">
+    <!-- WORK -->
+    <section id="work" class="section section-alt">
       <div class="container">
         <div class="section-head">
           <h2>Recent work</h2>
-          <p>Add your portfolio links here. You can start with placeholders and update later.</p>
+          <p>Replace these with real projects as you complete them.</p>
         </div>
 
         <div class="grid-3">
@@ -229,7 +309,7 @@
             <div class="project-thumb">Project</div>
             <div class="project-meta">
               <h3>Client Website</h3>
-              <p>Simple business website</p>
+              <p>Clean business presence</p>
             </div>
           </a>
 
@@ -237,7 +317,7 @@
             <div class="project-thumb">Project</div>
             <div class="project-meta">
               <h3>Startup Launch</h3>
-              <p>Landing page + structure</p>
+              <p>Landing page + copy structure</p>
             </div>
           </a>
 
@@ -245,18 +325,46 @@
             <div class="project-thumb">Project</div>
             <div class="project-meta">
               <h3>Website Refresh</h3>
-              <p>Redesign + performance</p>
+              <p>Redesign + speed upgrades</p>
             </div>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ==========================================================
-         CONTACT (NO FORM)
-         - Direct emails and phone numbers
-         - Clickable mailto: and tel:
-         ========================================================== -->
+    <!-- FAQ (2 columns) -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p>Quick answers to common questions.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="faq">
+            <h3>How fast can you deliver?</h3>
+            <p class="muted">It depends on content, but most simple sites can be launched quickly once we have the details.</p>
+          </div>
+
+          <div class="faq">
+            <h3>Do you only build one-page sites?</h3>
+            <p class="muted">No—this setup supports one-page or multi-page websites. We choose what fits your goals.</p>
+          </div>
+
+          <div class="faq">
+            <h3>Can I update the site myself?</h3>
+            <p class="muted">Yes. Since it’s simple HTML and CSS, you can edit text and sections anytime.</p>
+          </div>
+
+          <div class="faq">
+            <h3>How do clients contact us without a form?</h3>
+            <p class="muted">We provide direct phone and email contacts so prospects can reach you immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (NO FORM) -->
     <section id="contact" class="section section-alt">
       <div class="container">
         <div class="section-head">
@@ -265,7 +373,6 @@
         </div>
 
         <div class="contact-grid-simple">
-          <!-- Project Manager -->
           <div class="contact-card">
             <p class="small-label">Project Manager</p>
             <h3>Christ M. Louissaint</h3>
@@ -277,7 +384,6 @@
             </p>
           </div>
 
-          <!-- Customer Service -->
           <div class="contact-card">
             <p class="small-label">Customer Service</p>
             <h3>Sandy Marc</h3>
@@ -297,24 +403,19 @@
     </section>
   </main>
 
-  <!-- ==========================================================
-       FOOTER
-       - Auto-updates the year using a tiny script
-       ========================================================== -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-row">
       <p>© <span id="year"></span> Obelo Web Studio. All rights reserved.</p>
-
       <p class="footer-links">
         <a href="#services">Services</a>
-        <a href="#process">Process</a>
+        <a href="#benefits">Benefits</a>
         <a href="#contact">Contact</a>
       </p>
     </div>
   </footer>
 
   <script>
-    // Updates the year automatically so you don't have to
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
